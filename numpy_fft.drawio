@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-26T00:33:52.604Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="L4y7AAzAM0EkwgxrMaKJ" version="13.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-26T00:39:38.856Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="zzE40In-M3NCAn56xiar" version="13.7.5" type="github">
   <diagram id="4SzmiEqQ7drfHOVqqRY8" name="ページ1">
-    <mxGraphModel dx="723" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="494" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -20,7 +20,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="G6NK2Zfw-yr9_gnZrluK-11" value="nがNoneであるか" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;" vertex="1" parent="1">
-          <mxGeometry x="81.25" y="770" width="122.5" height="70" as="geometry" />
+          <mxGeometry x="78.13" y="770" width="128.75" height="80" as="geometry" />
         </mxCell>
         <mxCell id="G6NK2Zfw-yr9_gnZrluK-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-14" target="G6NK2Zfw-yr9_gnZrluK-15">
           <mxGeometry relative="1" as="geometry" />
@@ -53,10 +53,34 @@
           <mxGeometry x="82.5" y="900" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="G6NK2Zfw-yr9_gnZrluK-30" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="100" y="840" width="40" height="20" as="geometry" />
+          <mxGeometry x="100" y="850" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-31" target="G6NK2Zfw-yr9_gnZrluK-33">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="G6NK2Zfw-yr9_gnZrluK-31" value="&lt;b&gt;inv_normに1を代入&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="320" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-33" target="G6NK2Zfw-yr9_gnZrluK-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-33" value="normがNoneでないか" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="309.38" y="257.5" width="141.25" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-37" target="G6NK2Zfw-yr9_gnZrluK-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-37" value="よくわからん" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="309.38" y="387.5" width="141.25" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-39" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="342.5" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-40" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="472.5" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-41" value="inv_normにnを文字列に変換したものを代入" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="320" y="525" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
