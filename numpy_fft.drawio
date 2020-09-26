@@ -1,23 +1,62 @@
-<mxfile host="app.diagrams.net" modified="2020-09-26T00:19:09.845Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="hfQ3nusWdVB24q4p4uK7" version="13.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-26T00:33:52.604Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="L4y7AAzAM0EkwgxrMaKJ" version="13.7.5" type="github">
   <diagram id="4SzmiEqQ7drfHOVqqRY8" name="ページ1">
     <mxGraphModel dx="723" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="G6NK2Zfw-yr9_gnZrluK-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-1" target="G6NK2Zfw-yr9_gnZrluK-7">
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-1" target="G6NK2Zfw-yr9_gnZrluK-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="G6NK2Zfw-yr9_gnZrluK-1" value="開始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;align=center;" vertex="1" parent="1">
-          <mxGeometry x="360" y="20" width="100" height="60" as="geometry" />
+          <mxGeometry x="92.5" y="20" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="G6NK2Zfw-yr9_gnZrluK-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-7" target="G6NK2Zfw-yr9_gnZrluK-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G6NK2Zfw-yr9_gnZrluK-7" value="変数(引数)aをNumpy配列に変換" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="120" width="120" height="60" as="geometry" />
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-7" value="aをNumpy配列に変換" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="82.5" y="650" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G6NK2Zfw-yr9_gnZrluK-11" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;" vertex="1" parent="1">
-          <mxGeometry x="348.75" y="230" width="122.5" height="70" as="geometry" />
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-11" target="G6NK2Zfw-yr9_gnZrluK-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-11" value="nがNoneであるか" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="81.25" y="770" width="122.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-14" target="G6NK2Zfw-yr9_gnZrluK-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-14" value="aに入力配列を代入" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="82.5" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-15" target="G6NK2Zfw-yr9_gnZrluK-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-15" value="nに変換された出力軸の長さを指定する整数値を代入&lt;br&gt;(Default = None)" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="82.5" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-18" target="G6NK2Zfw-yr9_gnZrluK-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-18" value="axisにFFTを計算する軸を指定する整数値を代入&lt;br&gt;(Default = -1)" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="82.5" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-19" target="G6NK2Zfw-yr9_gnZrluK-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-19" value="normに正規化モードを代入&lt;br&gt;(Default = None)" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="82.5" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G6NK2Zfw-yr9_gnZrluK-28" target="G6NK2Zfw-yr9_gnZrluK-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-28" value="nにNumpy配列ndarrayの形状(各次元のサイズ)を代入" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="82.5" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-30" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="840" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G6NK2Zfw-yr9_gnZrluK-31" value="&lt;b&gt;inv_normに1を代入&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="320" y="140" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
