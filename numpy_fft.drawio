@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-26T13:57:57.821Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="hVprl_0nBrjWLitXCHBn" version="13.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-26T14:37:52.411Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="ODonWMZzzNScavlVFs8x" version="13.7.5" type="github">
   <diagram id="4SzmiEqQ7drfHOVqqRY8" name="ページ1">
-    <mxGraphModel dx="1021" dy="633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+    <mxGraphModel dx="413" dy="256" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -312,10 +312,10 @@
         <mxCell id="1ykWiY5d_qneHq9UVWBh-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-6" target="1ykWiY5d_qneHq9UVWBh-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1ykWiY5d_qneHq9UVWBh-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-6" target="1ykWiY5d_qneHq9UVWBh-20">
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-6" target="1ykWiY5d_qneHq9UVWBh-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1ykWiY5d_qneHq9UVWBh-6" value="&quot;axis&quot;が&quot;aのNumPy&lt;br&gt;配列ndarrayの次元数-1&quot;と&lt;br&gt;一致するか" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-6" value="axisがaのNumPy&lt;br&gt;配列ndarrayの次元数-1と&lt;br&gt;一致するか" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="1080" y="110" width="200" height="90" as="geometry" />
         </mxCell>
         <mxCell id="1ykWiY5d_qneHq9UVWBh-11" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;" vertex="1" parent="1">
@@ -336,14 +336,101 @@
         <mxCell id="1ykWiY5d_qneHq9UVWBh-19" value="**kwdsに-1を代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1400" y="480" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-20" target="1ykWiY5d_qneHq9UVWBh-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="1ykWiY5d_qneHq9UVWBh-20" value="is_realfがTrueであるか" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="225" width="200" height="90" as="geometry" />
+          <mxGeometry x="1080" y="345" width="200" height="90" as="geometry" />
         </mxCell>
         <mxCell id="1ykWiY5d_qneHq9UVWBh-24" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="1140" y="320" width="40" height="20" as="geometry" />
+          <mxGeometry x="1140" y="435" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="1ykWiY5d_qneHq9UVWBh-25" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="1280" y="250" width="40" height="20" as="geometry" />
+          <mxGeometry x="1290" y="380" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-26" target="1ykWiY5d_qneHq9UVWBh-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-26" value="is_forwardがTrueであるか" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="465" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-28" target="1ykWiY5d_qneHq9UVWBh-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-28" value="planにNoneを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-30" target="1ykWiY5d_qneHq9UVWBh-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-30" value="failに0を代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-31" target="1ykWiY5d_qneHq9UVWBh-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-31" value="PyArrayObject *dataに配列a1を代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-32" target="1ykWiY5d_qneHq9UVWBh-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-32" value="a1にaを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-35" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="555" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-38" target="1ykWiY5d_qneHq9UVWBh-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-38" target="1ykWiY5d_qneHq9UVWBh-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-38" value="dataがFalseでないか" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="945" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-39" value="rにNULLを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-42" target="1ykWiY5d_qneHq9UVWBh-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-42" value="ndimにdataの配列内の次元の数を代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="1093" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-43" target="1ykWiY5d_qneHq9UVWBh-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-43" value="*odimに配列dataの次元/形状へのポインタを定数として代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="1213" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-44" target="1ykWiY5d_qneHq9UVWBh-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-44" value="nptsにodimのndim - 1個目の要素を代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="1360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-45" target="1ykWiY5d_qneHq9UVWBh-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-45" value="変数:tdim&lt;br&gt;を定義" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="1480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-46" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="1035" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-52" target="1ykWiY5d_qneHq9UVWBh-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-52" value="tdimがFalseでないか" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="1585" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-53" target="1ykWiY5d_qneHq9UVWBh-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-53" value="オブジェクトdataに対する参照カウントを一つ減らす" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="1600" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
