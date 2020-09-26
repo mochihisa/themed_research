@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-26T11:23:17.680Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="P8C0Lsm3xuPeG042D7j8" version="13.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-26T11:31:01.304Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="WybHyZ7FTJVYEvYNhFsC" version="13.7.5" type="github">
   <diagram id="4SzmiEqQ7drfHOVqqRY8" name="ページ1">
-    <mxGraphModel dx="723" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+    <mxGraphModel dx="723" dy="448" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -213,6 +213,9 @@
         <mxCell id="k9I6KooZx5t5noIyQbYj-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="k9I6KooZx5t5noIyQbYj-27" target="k9I6KooZx5t5noIyQbYj-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="k9I6KooZx5t5noIyQbYj-27" target="1ykWiY5d_qneHq9UVWBh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="k9I6KooZx5t5noIyQbYj-27" value="aのNumpy配列&lt;br&gt;ndarrayの形状&lt;br&gt;(各次元のサイズ)の&lt;br&gt;axis個目の要素が&lt;br&gt;nでないか" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="534" y="574.37" width="194" height="111.25" as="geometry" />
         </mxCell>
@@ -220,7 +223,7 @@
           <mxGeometry x="590" y="685.63" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="k9I6KooZx5t5noIyQbYj-29" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="712.25" y="592.5" width="40" height="20" as="geometry" />
+          <mxGeometry x="728" y="610" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="k9I6KooZx5t5noIyQbYj-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="k9I6KooZx5t5noIyQbYj-30" target="k9I6KooZx5t5noIyQbYj-35" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -257,26 +260,57 @@
         <mxCell id="k9I6KooZx5t5noIyQbYj-44" value="indexのaxis個目の要素にslice(0, n)を代入" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="571" y="1092.5" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="k9I6KooZx5t5noIyQbYj-46" target="1ykWiY5d_qneHq9UVWBh-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="631" y="1690" />
+              <mxPoint x="990" y="1690" />
+              <mxPoint x="990" y="90" />
+              <mxPoint x="1167" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="k9I6KooZx5t5noIyQbYj-46" value="aにaのtuple(index)個目の要素を代入" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="571" y="1213" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bbutZRJERdEoyNJ-xutF-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="k9I6KooZx5t5noIyQbYj-48" target="bbutZRJERdEoyNJ-xutF-1">
+        <mxCell id="bbutZRJERdEoyNJ-xutF-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="k9I6KooZx5t5noIyQbYj-48" target="bbutZRJERdEoyNJ-xutF-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="k9I6KooZx5t5noIyQbYj-48" value="indexにslice(None)をlen(s)個繰り返した配列を代入" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="840" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bbutZRJERdEoyNJ-xutF-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bbutZRJERdEoyNJ-xutF-1" target="bbutZRJERdEoyNJ-xutF-2">
+        <mxCell id="bbutZRJERdEoyNJ-xutF-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bbutZRJERdEoyNJ-xutF-1" target="bbutZRJERdEoyNJ-xutF-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bbutZRJERdEoyNJ-xutF-1" value="indexのaxis個目の要素にslice(0, s[axis])を代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="bbutZRJERdEoyNJ-xutF-1" value="indexのaxis個目の要素にslice(0, s[axis])を代入" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="960" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bbutZRJERdEoyNJ-xutF-2" value="sのaxis個目の要素にnを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bbutZRJERdEoyNJ-xutF-2" target="bbutZRJERdEoyNJ-xutF-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbutZRJERdEoyNJ-xutF-2" value="sのaxis個目の要素にnを代入" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="1093" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bbutZRJERdEoyNJ-xutF-5" value="zに要素数s,データ型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bbutZRJERdEoyNJ-xutF-5" target="1ykWiY5d_qneHq9UVWBh-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbutZRJERdEoyNJ-xutF-5" value="zに要素数=s,データ型=aのデータ型の,要素=0の配列を代入" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="1213" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-2" target="1ykWiY5d_qneHq9UVWBh-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-2" value="zのtuple(index)コメの要素にaを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-3" target="1ykWiY5d_qneHq9UVWBh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-3" value="aにzを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-6" value="" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="110" width="173.37" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
