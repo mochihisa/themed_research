@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-26T05:34:30.470Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="2p4II9xzEWWh7hzpqWij" version="13.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-26T11:23:17.680Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="P8C0Lsm3xuPeG042D7j8" version="13.7.5" type="github">
   <diagram id="4SzmiEqQ7drfHOVqqRY8" name="ページ1">
     <mxGraphModel dx="723" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
@@ -260,8 +260,23 @@
         <mxCell id="k9I6KooZx5t5noIyQbYj-46" value="aにaのtuple(index)個目の要素を代入" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="571" y="1213" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="bbutZRJERdEoyNJ-xutF-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="k9I6KooZx5t5noIyQbYj-48" target="bbutZRJERdEoyNJ-xutF-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="k9I6KooZx5t5noIyQbYj-48" value="indexにslice(None)をlen(s)個繰り返した配列を代入" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbutZRJERdEoyNJ-xutF-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bbutZRJERdEoyNJ-xutF-1" target="bbutZRJERdEoyNJ-xutF-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbutZRJERdEoyNJ-xutF-1" value="indexのaxis個目の要素にslice(0, s[axis])を代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbutZRJERdEoyNJ-xutF-2" value="sのaxis個目の要素にnを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1093" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bbutZRJERdEoyNJ-xutF-5" value="zに要素数s,データ型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1213" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
