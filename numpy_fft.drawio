@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-26T11:31:01.304Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="WybHyZ7FTJVYEvYNhFsC" version="13.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-26T11:55:18.508Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="SFi6OCFk7Yi_TtHpWjHM" version="13.7.5" type="github">
   <diagram id="4SzmiEqQ7drfHOVqqRY8" name="ページ1">
-    <mxGraphModel dx="723" dy="448" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+    <mxGraphModel dx="1021" dy="633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -263,10 +263,10 @@
         <mxCell id="1ykWiY5d_qneHq9UVWBh-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="k9I6KooZx5t5noIyQbYj-46" target="1ykWiY5d_qneHq9UVWBh-6">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="631" y="1690" />
-              <mxPoint x="990" y="1690" />
+              <mxPoint x="631" y="1640" />
+              <mxPoint x="990" y="1640" />
               <mxPoint x="990" y="90" />
-              <mxPoint x="1167" y="90" />
+              <mxPoint x="1180" y="90" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -309,8 +309,35 @@
         <mxCell id="1ykWiY5d_qneHq9UVWBh-3" value="aにzを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="840" y="1480" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1ykWiY5d_qneHq9UVWBh-6" value="" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="110" width="173.37" height="80" as="geometry" />
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-6" target="1ykWiY5d_qneHq9UVWBh-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1ykWiY5d_qneHq9UVWBh-6" target="1ykWiY5d_qneHq9UVWBh-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-6" value="&quot;axis&quot;が&quot;aのNumPy&lt;br&gt;配列ndarrayの次元数-1&quot;と&lt;br&gt;一致するか" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="110" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-11" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="130" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-12" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="200" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-13" value="rにpfi.execute(a, is_real, is_forward, fct)を代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-15" value="objにaを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="125" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-17" value="methodにswapaxesを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-18" value="*argsにaxisを代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1ykWiY5d_qneHq9UVWBh-19" value="**kwdsに-1を代入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="480" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
