@@ -41,7 +41,7 @@ def fft_g(wav_filename):
     print(f"{fft_data=}\n{freqList=}")
 
     plt.plot(freqList, fft_data)
-    plt.xlim(0, 8000)
+#    plt.xlim(0, 8000)
     plt.show()
 
 
