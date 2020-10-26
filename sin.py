@@ -14,43 +14,35 @@ def text2list(filename):
 
 
 def sin_wave(l):
-    fname = 'sinwave.wav'
-    ch = 1
-    width = 2
+
+    A = .1
     fs = 44100
-    time = 3
-    samples = time * fs
-    s = 0
-    t = np.linspace(0, time, samples + 1)   
-    count = 0
-    for list in l:
-        if float(list[1]) > -100:
-            print(
-                f'A={(100 - abs(int(float(list[1]))))},f={int(float(list[0]))}')
-            s1 = (100 - abs(int(float(list[1])))) / 35 * \
-                np.sin(2 * np.pi * int(float(list[0])) * t)
-            print(s1)
-            s = s + s1
+    f0 = 440
+    f1 = 880
+    f2 = 1320
+    t = 10
+    sin_wave = 0
+    fname = 'sinwave.wav'
+    point = np.arange(0, fs * t)
+    for s in l:
+        A = 100 - abs(int(float(s[1])))
+        f = int(float(s[0]))
 
-    print(s)
+        if A > 0 :
+            A *= 0.000002
+            print(A, f)
+            sin_wave += A * np.sin(2 * np.pi * f * point / fs)
+            #[print(s) for s in sin_wave]
+    sin_wave = [int(x * 32767.0) for x in sin_wave]  # 16bit符号付き整数に変換
 
-    l = [[58, 216], [59, 431], [66, 635], [73, 855], [73, 1039], [73, 1282]]
-    for ll in l:
-        s1 = ll[0] * np.sin(2 * np.pi * ll[1] * t)
-        s = s + s1
-    s = np.rint(s)
-    s = s.astype(np.int16)
-    s = s[0:samples]
-    data = struct.pack("h" * samples, *s)
-    wf = wave.open(fname, 'w')
-    wf.setnchannels(ch)
-    wf.setsampwidth(width)
-    wf.setframerate(fs)
-    wf.writeframes(data)
-    wf.close()
+    # バイナリ化
+    binwave = struct.pack("h" * len(sin_wave), *sin_wave)
 
-    plt.plot(s[0:500])
-    plt.show()
+    w = wave.Wave_write(fname)
+    p = (1, 2, fs, len(binwave), 'NONE', 'not compressed')
+    w.setparams(p)
+    w.writeframes(binwave)
+    w.close()
 
 
 def main():

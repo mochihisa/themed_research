@@ -1,32 +1,32 @@
 import numpy as np
+from matplotlib import pyplot as plt
 import wave
 import struct
-from matplotlib import pylab as plt
 
-fname = 'sinwave_440hz.wav'
-ch = 1 # チャンネル数：モノラル
-width = 2 # 量子化精度：2byte=16bit=65,536段階=±32,767
-fs = 44100 # サンプリング周波数：44.1kHz
-f1 = 440 # 基本周波数：440Hz(A4)
-f2 = 880
-time = 3 # 録音時間：3秒間
-samples = time * fs # サンプル数
+A = .1
+fs = 44100
+f0 = 440
+sec = 10
 
-t = np.linspace(0, time, samples + 1)
-s1 = 32767 * np.sin(2 * np.pi * f1 * t)
-s2 = 32767 * np.sin(2 * np.pi *f2 * t)
-s = s1 + s2
-s = np.rint(s)
-s = s.astype(np.int16)
-s = s[0:samples]
-data = struct.pack("h" * samples , *s) # ndarrayからbytesオブジェクトに変換
 
-wf = wave.open(fname, 'w')
-wf.setnchannels(ch)
-wf.setsampwidth(width)
-wf.setframerate(fs)
-wf.writeframes(data)
-wf.close()
+def create_wave(A, f0, fs, t):
+    # nポイント
+    f1 = 880
+    f2 = 1320
+    point = np.arange(0, fs * t)
+    sin_wave = A * np.sin(2 * np.pi * f0 * point / fs) + A * np.sin(2 *
+                                                                    np.pi * f1 * point / fs) + A * np.sin(2 * np.pi * f2 * point / fs)
 
-plt.plot(s[0:500])
-plt.show()
+    sin_wave = [int(x * 32767.0) for x in sin_wave]  # 16bit符号付き整数に変換
+
+    # バイナリ化
+    binwave = struct.pack("h" * len(sin_wave), *sin_wave)
+
+    w = wave.Wave_write("440Hz.wav")
+    p = (1, 2, fs, len(binwave), 'NONE', 'not compressed')
+    w.setparams(p)
+    w.writeframes(binwave)
+    w.close()
+
+
+create_wave(A, f0, fs, sec)
