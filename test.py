@@ -1,32 +1,70 @@
-import numpy as np
-from matplotlib import pyplot as plt
+#coding:utf-8
 import wave
-import struct
+import numpy as np
+import scipy.io.wavfile
+import scipy.signal
+import scipy.fftpack
+from pylab import *
+from levinson_durbin import autocorr, LevinsonDurbin
 
-A = .1
-fs = 44100
-f0 = 440
-sec = 10
+"""LPCスペクトル包絡を求める"""
 
+def wavread(filename):
+    wf = wave.open(filename, "r")
+    fs = wf.getframerate()
+    x = wf.readframes(wf.getnframes())
+    x = np.frombuffer(x, dtype="int16") / 32768.0  # (-1, 1)に正規化
+    wf.close()
+    return x, float(fs)
 
-def create_wave(A, f0, fs, t):
-    # nポイント
-    f1 = 880
-    f2 = 1320
-    point = np.arange(0, fs * t)
-    sin_wave = A * np.sin(2 * np.pi * f0 * point / fs) + A * np.sin(2 *
-                                                                    np.pi * f1 * point / fs) + A * np.sin(2 * np.pi * f2 * point / fs)
+def preEmphasis(signal, p):
+    """プリエンファシスフィルタ"""
+    # 係数 (1.0, -p) のFIRフィルタを作成
+    return scipy.signal.lfilter([1.0, -p], 1, signal)
 
-    sin_wave = [int(x * 32767.0) for x in sin_wave]  # 16bit符号付き整数に変換
+if __name__ == "__main__":
+    # 音声をロード
+    args = sys.argv
+    wav_filename = args[1]
+    wav, fs = wavread(wav_filename)
+    t = np.arange(0.0, len(wav) / fs, 1/fs)
 
-    # バイナリ化
-    binwave = struct.pack("h" * len(sin_wave), *sin_wave)
+    # 音声波形の中心部分を切り出す
+    center = len(wav) / 2  # 中心のサンプル番号
+    cuttime = 0.04         # 切り出す長さ [s]
+    s = wav[int(center - cuttime/2*fs) : int(center + cuttime/2*fs)]
 
-    w = wave.Wave_write("440Hz.wav")
-    p = (1, 2, fs, len(binwave), 'NONE', 'not compressed')
-    w.setparams(p)
-    w.writeframes(binwave)
-    w.close()
+    # プリエンファシスフィルタをかける
+    p = 0.97         # プリエンファシス係数
+    s = preEmphasis(s, p)
 
+    # ハミング窓をかける
+    hammingWindow = np.hamming(len(s))
+    s = s * hammingWindow
 
-create_wave(A, f0, fs, sec)
+    # LPC係数を求める
+    lpcOrder = 32
+    r = autocorr(s, lpcOrder + 1)
+    a, e  = LevinsonDurbin(r, lpcOrder)
+    print("*** result ***")
+    print("a:", a)
+    print("e:", e)
+
+    # LPC係数の振幅スペクトルを求める
+    nfft = 2048   # FFTのサンプル数
+
+    fscale = np.fft.fftfreq(nfft, d = 1.0 / fs)[:int(nfft/2)]
+
+    # オリジナル信号の対数スペクトル
+    spec = np.abs(np.fft.fft(s, nfft))
+    logspec = 20 * np.log10(spec)
+    plot(fscale, logspec[:int(nfft/2)])
+
+    # LPC対数スペクトル
+    w, h = scipy.signal.freqz(np.sqrt(e), a, nfft, "whole")
+    lpcspec = np.abs(h)
+    loglpcspec = 20 * np.log10(lpcspec)
+    plot(fscale, loglpcspec[:int(nfft/2)], "r", linewidth=2)
+
+    xlim((0, 10000))
+    show()

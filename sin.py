@@ -29,10 +29,12 @@ def sin_wave(l):
         f = int(float(s[0]))
 
         if A > 0 :
-            A *= 0.000002
+            A *= 0.00002
             print(A, f)
             sin_wave += A * np.sin(2 * np.pi * f * point / fs)
             #[print(s) for s in sin_wave]
+    plt.plot(sin_wave[0:1000])
+    plt.show()
     sin_wave = [int(x * 32767.0) for x in sin_wave]  # 16bit符号付き整数に変換
 
     # バイナリ化
